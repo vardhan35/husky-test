@@ -1,0 +1,129 @@
+.navbar_container{
+  width: 100%;
+  height: 70px;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 4;
+  background-color:#f7f3f0;
+  display: flex;
+  align-items: center;
+}
+
+.nav{
+  position: relative;
+  width: 90%;
+  height: 100%;
+  max-width: 1280px;
+  margin:auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo{
+  font-size: 1.2rem;
+  color: #ff4500;
+  /* margin: 0; */
+  margin-right: auto;
+  margin-left: 0.25em;
+}
+
+
+.navbar{
+  margin: -400% auto;
+  transition: all 0.4s ease-in-out;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 100vh;
+  width: 1000%;
+  position: absolute;
+  background-color: #ff4500;
+  text-align: center;
+  top: 0;
+}
+
+.navbar_active{
+  transition: all 0.4s ease-in-out;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 100vh;
+  width: 1000%;
+  position: absolute;
+  background-color: #ff4500;
+  text-align: center;
+  top: 0;
+  margin: 0 auto;
+}
+
+.nav_item{
+  list-style: none;
+  text-decoration: none;
+  /* color: #ff7c4c; 
+  /* new */
+  font-size: 2rem;
+  color: white;
+  margin: 0.25em auto;
+}
+
+.nav_item::after{
+  content: "";
+  display: block;
+  height: 3px;
+  border-radius: 1px;
+  width: 0;
+  background: transparent;
+  transition: width 0.2s ease-in-out;
+}
+.nav_item:hover::after{
+  width: 100%;
+  background-color: white;
+}
+
+
+/* 
+.navbar_hamburger{
+  font-size:2rem;
+  border: none;
+  color:#ff4500;
+} */
+
+.navbar_hamburger{
+  transition: all 0.4s ease-in-out;
+  width: 45px;
+  background-color: transparent;
+  transform: translate(-5%, -50%);
+  right: 5%;
+  top: 50%;
+  margin-left: auto;
+  font-size: 2rem;
+  border: none;
+  color: #ff4500;
+  position: absolute;
+  z-index: 3;
+  height: 45px;
+}
+
+.navbar_hamburger_active{
+  transition: all 0.4s ease-in-out;
+  background-color: transparent;
+  color: #ffffff;
+  width: 45px;
+  transform: translate(-5%, -50%);
+  right: 5%;
+  top: 50%;
+  margin-left: auto;
+  font-size: 2rem;
+  border: none;
+  position: absolute;
+  z-index: 3;
+  height: 45px;
+}
+
+
+
+.fa{
+  color:#ff4500;
+}

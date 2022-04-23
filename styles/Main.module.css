@@ -1,0 +1,133 @@
+
+.container{
+  max-width: 1280px;
+  margin: auto;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main{
+  display: flex;
+  color: #1b1b1b;
+  width: 90%;
+  text-align: left;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.main h1{
+    font-size:6rem;
+    text-transform: uppercase;
+    line-height: 1.5;
+}
+
+.main h3{
+  line-height: 1.5;
+  font-size: 2rem;
+  margin-left: 0.25em;
+}
+
+.main_actions{
+  margin: 1em auto 1em 0;
+  display: flex;
+  width: 100%;
+}
+.main_project_btn{
+  border: none;
+  background-color: #ff4500;
+  height: 40px;
+  max-width: 200px;
+  width: 40%;
+  margin: auto 0.5em auto 0;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.main_project_btn a {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+
+
+.main_project_btn:hover{
+  transform: scale(1.02);
+  transition: all 0.2s ease-in-out;
+}
+
+.main_resume_btn{
+  border: none;
+  font-weight: 600;
+  color: #ffffff;
+  background-color: #ff7c4c;
+  max-width: 200px;
+  width: 40%;
+  margin: auto auto auto 0.5em;
+  height: 40px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.main_resume_btn:hover{
+  transform: scale(1.02);
+  transition: all 0.2s ease-in-out;
+}
+
+
+@media (max-width:500px){
+  .main h3{
+    font-size: 1rem;
+    margin-left: 0.12em;
+  }
+  .main h1{
+    line-height: 1.5;
+    font-size:2rem;
+  }
+  .main_resume_btn{
+    margin: 0;
+  }
+  .main_project_btn{
+    margin: 0;
+  }
+  .main_actions{
+    margin: 1em auto 1em 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+@media ( min-width:500px) and (max-width:1014px){
+  .main h3{
+    font-size: 1.5rem;
+    margin-left: 0.12em;
+  }
+  .main h1{
+    line-height: 1.5;
+    font-size:3rem;
+  }
+}
+@media ( min-width:1015px) and (max-width:1280px){
+  .main h1{
+    line-height: 1.5;
+    font-size:5rem;
+  }
+}
+
+@media (max-width:990px){
+  .main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .main_project_btn{
+    margin: auto 1em auto auto;
+  }
+  .main_resume_btn{
+    margin: auto auto auto 1em;
+  }
+}

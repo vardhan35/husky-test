@@ -1,0 +1,76 @@
+.container{
+  max-width: 1280px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0.25em auto 3em;
+}
+
+.contact{
+  max-width: 900px;
+  width: 90%;
+  height: 80%;
+  margin: 1em 0.5em;
+}
+
+.header{
+  color: #ff4500;
+  width: 100%;
+  text-align: center;
+  margin: 1em auto;
+}
+
+.card{
+  width: 90%;
+  margin: auto;
+}
+
+.email{
+  width: 100%;
+  text-align: left;
+}
+.email h2{
+  font-size: 1.2rem;
+  margin: 0.5em auto;
+}
+.email_id{
+  color: #ff4500;
+  font-weight: 600;
+}
+
+.socialmedia{
+  width: 100%;
+  margin: 1em auto;
+  text-align: center;
+}
+
+.socialmedia h2{
+  margin: 1em auto;
+}
+
+.socialmedia_id{
+  width: 90%;
+  display: flex;
+  margin: 1em auto;
+  justify-content: center;
+}
+
+
+.img:hover{
+  transform: scale(1.02);
+}
+
+
+.bold{
+  color: #ff4500;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+@media (max-width:500px){
+  .email h2{
+    font-size: 1rem;
+  }
+}
