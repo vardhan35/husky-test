@@ -1,6 +1,6 @@
-import styles from '../../styles/Project.module.css';
+import styles from "../../styles/Project.module.css";
 
-const ProjectHead = () => {
+function ProjectHead() {
   return (
     <div className={styles.head}>
       <header className={styles.header}>
@@ -8,6 +8,6 @@ const ProjectHead = () => {
       </header>
     </div>
   );
-};
+}
 
 export default ProjectHead;

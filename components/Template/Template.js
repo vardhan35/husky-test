@@ -1,7 +1,7 @@
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 
-const Template = ({ children }) => {
+function Template({ children }) {
   return (
     <div>
       <Navbar />
@@ -9,6 +9,6 @@ const Template = ({ children }) => {
       <Footer />
     </div>
   );
-};
+}
 
 export default Template;

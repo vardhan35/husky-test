@@ -1,8 +1,8 @@
-import styles from '../../styles/Contact.module.css';
-import Link from 'next/link';
-import Image from 'next/image';
+import Link from "next/link";
+import Image from "next/image";
+import styles from "../../styles/Contact.module.css";
 
-const Contact = () => {
+function Contact() {
   return (
     <div className={styles.container} id="contact">
       <div className={styles.contact}>
@@ -36,31 +36,31 @@ const Contact = () => {
                   height={70}
                   alt="vardhan's github"
                 />
-</Link>
-                          <Link href="https://www.instagram.com/vardhan3_5/">
-                            <Image
-                              className={styles.img}
-                              src="/icons/instaGram.png"
-                              width={70}
-                              height={70}
-                              alt="vardhan's instaGram"
-                            />
-                          </Link>
-                                <Link href="https://twitter.com/vardhan305">
-                                  <Image
-                                    className={styles.img}
-                                    src="/icons/twitter.png"
-                                    width={70}
-                                    height={70}
-                                    alt="vardhan's twitter"
-                                  />
-                                </Link>
+              </Link>
+              <Link href="https://www.instagram.com/vardhan3_5/">
+                <Image
+                  className={styles.img}
+                  src="/icons/instaGram.png"
+                  width={70}
+                  height={70}
+                  alt="vardhan's instaGram"
+                />
+              </Link>
+              <Link href="https://twitter.com/vardhan305">
+                <Image
+                  className={styles.img}
+                  src="/icons/twitter.png"
+                  width={70}
+                  height={70}
+                  alt="vardhan's twitter"
+                />
+              </Link>
             </div>
           </div>
         </div>
       </div>
     </div>
   );
-};
+}
 
 export default Contact;
