@@ -1,5 +1,5 @@
-import Link from 'next/link';
-import styles from '../../styles/About.module.css';
+import Link from "next/link";
+import styles from "../../styles/About.module.css";
 
 function About() {
   return (
@@ -9,12 +9,7 @@ function About() {
           <h1>About</h1>
         </header>
         <h2 className={styles.title}>
-          My name is
-          {" "}
-          <span className={styles.bold}>Harshvardhan</span>
-          {" "}
-          and I am
-          {" "}
+          My name is <span className={styles.bold}>Harshvardhan</span> and I am{" "}
           <span className={styles.bold}>Frontend Developer</span>
         </h2>
         <div className={styles.card}>
@@ -22,11 +17,9 @@ function About() {
             <h2 className={styles.card_title}>What I Do</h2>
             <div className={styles.card_content}>
               <p className={styles.card_para}>
-                I am Frontend Developer working with React Js,
-                JavaScript, Html,Css, scss,and next-js I have
-                Created some projects in above mentions You will find them Here
-                {" "}
-                {" "}
+                I am Frontend Developer working with React Js, JavaScript,
+                Html,Css, scss,and next-js I have Created some projects in above
+                mentions You will find them Here{" "}
                 <Link href="/projects">Portfolio</Link>
               </p>
               <p className={styles.card_para}>
@@ -38,8 +31,8 @@ function About() {
               <p className={styles.card_para}>
                 About my Hobbies I like to watch Animes Movies, Travelling,
                 Cooking Going to See different Forts around Pune, Maharashtra. I
-                also like to work on Personal Projects which I have Added in My Portfolio.
-                And Here You will Get my
+                also like to work on Personal Projects which I have Added in My
+                Portfolio. And Here You will Get my
                 <Link href="/Resume.pdf">Resume</Link>
               </p>
             </div>

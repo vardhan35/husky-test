@@ -12,22 +12,38 @@ function Navbar() {
       <nav className={styles.nav}>
         <div className={isclick ? styles.navbar_active : styles.navbar}>
           <Link href="/">
-            <button type="button" className={styles.nav_item} onClick={handleClick}>
+            <button
+              type="button"
+              className={styles.nav_item}
+              onClick={handleClick}
+            >
               Home
             </button>
           </Link>
           <Link href="/#about">
-            <button type="button" className={styles.nav_item} onClick={handleClick}>
+            <button
+              type="button"
+              className={styles.nav_item}
+              onClick={handleClick}
+            >
               About
             </button>
           </Link>
           <Link href="/#contact">
-            <button type="button" className={styles.nav_item} onClick={handleClick}>
+            <button
+              type="button"
+              className={styles.nav_item}
+              onClick={handleClick}
+            >
               Contact
             </button>
           </Link>
           <Link href="/projects">
-            <button type="button" className={styles.nav_item} onClick={handleClick}>
+            <button
+              type="button"
+              className={styles.nav_item}
+              onClick={handleClick}
+            >
               Portfolio
             </button>
           </Link>

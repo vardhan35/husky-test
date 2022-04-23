@@ -52,7 +52,9 @@ function ProjectList() {
 
   return (
     <div className={styles.project_list}>
-      {Data.map((project) => <ProjectCard key={project.id} project={project} />)}
+      {Data.map((project) => (
+        <ProjectCard key={project.id} project={project} />
+      ))}
     </div>
   );
 }

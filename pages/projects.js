@@ -5,9 +5,7 @@ import ProjectList from "../components/Project/ProjectList";
 function Projects() {
   return (
     <>
-      <HeadComponent
-        value="Projects"
-      />
+      <HeadComponent value="Projects" />
       <ProjectHead />
       <ProjectList />
     </>

@@ -17,12 +17,16 @@ function ProjectCrd({ project }) {
         <div className={styles.project_action}>
           <div className={styles.link}>
             <Link href={`${project.weblink}`}>
-              <button type="button" className={styles.btn_project}>Live Website</button>
+              <button type="button" className={styles.btn_project}>
+                Live Website
+              </button>
             </Link>
           </div>
           <div className={styles.link}>
             <Link href={`${project.githublink}`} className={styles.img}>
-              <button type="button" className={styles.btn_code}>Project Code</button>
+              <button type="button" className={styles.btn_code}>
+                Project Code
+              </button>
             </Link>
           </div>
         </div>
