@@ -1,5 +1,5 @@
-import Link from "next/link";
-import styles from "../../styles/About.module.css";
+import Link from 'next/link';
+import styles from '../../styles/About.module.css';
 
 function About() {
   return (
