@@ -6,9 +6,10 @@ import ProjectList from "../components/Project/ProjectList";
 const Projects = () => {
   return (
     <>
-      <HeadComponent value={"Projects"} />
-      <ProjectHead />
-      <ProjectList />
+      <HeadComponent
+       value={"Projects"} />
+                <ProjectHead />
+                    <ProjectList />
     </>
   );
 };
