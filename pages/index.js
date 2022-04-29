@@ -6,7 +6,7 @@ import Main from "../components/Home/Main";
 export default function Home() {
   return (
     <>
-      <HeadComponent value={"Home"} />
+      <HeadComponent value="Home" />
       <Main />
       <About />
       <Contact />

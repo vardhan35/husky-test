@@ -1,7 +1,7 @@
-import styles from "../../styles/About.module.css";
 import Link from "next/link";
+import styles from "../../styles/About.module.css";
 
-const About = () => {
+function About() {
   return (
     <div className={styles.container_about} id="about">
       <div className={styles.about}>
@@ -19,7 +19,7 @@ const About = () => {
               <p className={styles.card_para}>
                 I am Frontend Developer working with React Js, JavaScript,
                 Html,Css, scss,and next-js I have Created some projects in above
-                mentions You will find them Here{" "} 
+                mentions You will find them Here{" "}
                 <Link href="/projects">Portfolio</Link>
               </p>
               <p className={styles.card_para}>
@@ -31,8 +31,9 @@ const About = () => {
               <p className={styles.card_para}>
                 About my Hobbies I like to watch Animes Movies, Travelling,
                 Cooking Going to See different Forts around Pune, Maharashtra. I
-                also like to work on Personal Projects which I have Added in My Portfolio.
-                And Here You will Get my <Link href="/Resume.pdf">Resume</Link>
+                also like to work on Personal Projects which I have Added in My
+                Portfolio. And Here You will Get my
+                <Link href="/Resume.pdf">Resume</Link>
               </p>
             </div>
           </div>
@@ -40,6 +41,6 @@ const About = () => {
       </div>
     </div>
   );
-};
+}
 
 export default About;

@@ -1,11 +1,11 @@
-import styles from "../../styles/Project.module.css";
 import Link from "next/link";
+import styles from "../../styles/Project.module.css";
 
-const ProjectCrd = ({ project }) => {
+function ProjectCrd({ project }) {
   return (
     <div key={project.id} className={styles.card}>
       <div className={styles.card_left}>
-        <img src={project.img} className={styles.card_left_img} />
+        <img src={project.img} alt="Here" className={styles.card_left_img} />
       </div>
       <div className={styles.card_right}>
         <header className={styles.card_header}>
@@ -17,18 +17,22 @@ const ProjectCrd = ({ project }) => {
         <div className={styles.project_action}>
           <div className={styles.link}>
             <Link href={`${project.weblink}`}>
-              <button className={styles.btn_project}>Live Website</button>
+              <button type="button" className={styles.btn_project}>
+                Live Website
+              </button>
             </Link>
           </div>
           <div className={styles.link}>
             <Link href={`${project.githublink}`} className={styles.img}>
-              <button className={styles.btn_code}>Project Code</button>
+              <button type="button" className={styles.btn_code}>
+                Project Code
+              </button>
             </Link>
           </div>
         </div>
       </div>
     </div>
   );
-};
+}
 
 export default ProjectCrd;

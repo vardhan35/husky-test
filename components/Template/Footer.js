@@ -1,11 +1,11 @@
-import styles from "../../styles/Footer.module.css";
 import Link from "next/link";
+import styles from "../../styles/Footer.module.css";
 
-const Footer = () => {
+function Footer() {
   return (
     <footer className={styles.container}>
       <Link href="/">
-        <a className={styles.footer_link}>
+        <a href="/" className={styles.footer_link}>
           Top
         </a>
       </Link>
@@ -14,6 +14,6 @@ const Footer = () => {
       </div>
     </footer>
   );
-};
+}
 
 export default Footer;

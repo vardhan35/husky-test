@@ -1,8 +1,8 @@
-import styles from "../../styles/Contact.module.css";
 import Link from "next/link";
 import Image from "next/image";
+import styles from "../../styles/Contact.module.css";
 
-const Contact = () => {
+function Contact() {
   return (
     <div className={styles.container} id="contact">
       <div className={styles.contact}>
@@ -61,6 +61,6 @@ const Contact = () => {
       </div>
     </div>
   );
-};
+}
 
 export default Contact;
